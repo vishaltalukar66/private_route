@@ -4,6 +4,17 @@ Private Routes in React is a demonstration of how to implement user authenticati
 
 With this setup, users can log in, verify their cookies, and access confidential data once authenticated.
 
+**Link** : https://private-route-navy.vercel.app/
+
+## Credentials
+**User 1**
+- Email : user1@test.com 
+- Password : user1
+
+**User 2**
+- Email : test@test.com 
+- Password : test1
+
 ## 🚀 Features
 
 - 🔑 **User authentication:** Users can sign up and log in.

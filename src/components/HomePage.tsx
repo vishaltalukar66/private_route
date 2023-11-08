@@ -59,6 +59,7 @@ export const HomePage = () => {
                     <div className="text-white font-mono text-2xl">
 
                         This page is accessible to authenticated users only, and access is further secured by verifying the user's credentials stored in the cookie.
+                        Cookie will expire in 2 mintues.
                     </div>
                     {/* Get Confidential data onClick */}
                     <button onClick={getData} className="bg-yellow-300 p-1 rounded-xl w-56 text-lg">
@@ -87,7 +88,7 @@ export const HomePage = () => {
                 </div>
                 <div className="">
                     {/* logout Button */}
-{/*                     <button onClick={logout} className="bg-yellow-300 p-1  rounded-xl w-20 text-md">
+                    {/*                     <button onClick={logout} className="bg-yellow-300 p-1  rounded-xl w-20 text-md">
                         Logout
                     </button> */}
                 </div>
