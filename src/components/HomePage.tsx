@@ -32,23 +32,23 @@ export const HomePage = () => {
     }
 
     //logout function
-    const logout = async () => {
-        await fetch('https://private-route-backend.vercel.app/logout', {
-            method: 'POST',
-            credentials: 'include',
-            headers: {
-                'Content-Type': 'application/json', // Set the content type to JSON
-            },
-            body: JSON.stringify({ key: 'value' })
-        }).then((res) => res.json())
-            .then(() => {
-                //authentication() will trigger on refresh 
-                window.location.reload();
-            }
-            );
+    // const logout = async () => {
+    //     await fetch('https://private-route-backend.vercel.app/logout', {
+    //         method: 'POST',
+    //         credentials: 'include',
+    //         headers: {
+    //             'Content-Type': 'application/json', // Set the content type to JSON
+    //         },
+    //         body: JSON.stringify({ key: 'value' })
+    //     }).then((res) => res.json())
+    //         .then(() => {
+    //             //authentication() will trigger on refresh 
+    //             window.location.reload();
+    //         }
+    //         );
 
 
-    }
+    // }
     return (<>
 
 
@@ -87,9 +87,9 @@ export const HomePage = () => {
                 </div>
                 <div className="">
                     {/* logout Button */}
-                    <button onClick={logout} className="bg-yellow-300 p-1  rounded-xl w-20 text-md">
+{/*                     <button onClick={logout} className="bg-yellow-300 p-1  rounded-xl w-20 text-md">
                         Logout
-                    </button>
+                    </button> */}
                 </div>
             </div>
         </div>
